@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #36393F;
+    /* Cor de fundo similar ao Discord */
+    color: #DCDDDE;
+    /* Cor do texto */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2F3136;
+    /* Cabeçalho com cor diferente */
+}
+
+header h1,
+header a {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+header a {
+    text-decoration: none;
+    color: #7289DA;
+    /* Azul do Discord para links */
+}
+
+#warning {
+    text-align: center;
+    padding: 10px;
+    background-color: #2F3136;
+}
+
+#warning p {
+    margin: 5px 0;
+}
+
+#chatbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+#chatlog {
+    flex: 1;
+    padding: 20px;
+    background-color: #2F3136;
+    overflow-y: auto;
+}
+
+#chatlog .user {
+    text-align: right;
+    color: #7289DA;
+    /* Azul do Discord para usuário */
+    margin-bottom: 10px;
+}
+
+#chatlog .eliza {
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+#input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #2F3136;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #40444B;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+#user-input:focus {
+    outline: none;
+    border: 1px solid #7289DA;
+}
+
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7289DA;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #5B6EAE;
+}
+
+@media screen and (max-width: 600px) {
+    #input-area {
+        flex-direction: column;
+    }
+
+    #user-input {
+        margin: 0 0 10px 0;
+    }
+
+    #send-button {
+        width: 100%;
+    }
+}
